@@ -1,15 +1,19 @@
 name = "otakudesu-proxy"
 main = "src/index.js"
-compatibility_date = "2024-06-01"
+compatibility_date = "2025-06-01"
 workers_dev = true
 
 [vars]
 UPSTREAM = "https://otakudesu.blog"
 
-[[kv_namespaces]]
-binding = "COOKIE_JAR"
-id = "<KV_ID_COOKIE>"
-
-[[kv_namespaces]]
-binding = "HTML_CACHE"
-id = "<KV_ID_HTML>"
+# KV opsional - aktifkan setelah deploy pertama berhasil.
+# Buat dulu: wrangler kv:namespace create COOKIE_JAR
+#            wrangler kv:namespace create HTML_CACHE
+# Lalu uncomment dan isi ID asli di bawah ini.
+# [[kv_namespaces]]
+# binding = "COOKIE_JAR"
+# id = "<KV_ID_COOKIE>"
+#
+# [[kv_namespaces]]
+# binding = "HTML_CACHE"
+# id = "<KV_ID_HTML>"
