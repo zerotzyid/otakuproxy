@@ -26,6 +26,6 @@ npm run tail
 ## Behavior
 - `Cookie` from KV `COOKIE_JAR`, saved from `Set-Cookie` (TTL 1800s)
 - `GET` HTML cached in KV `HTML_CACHE` key `html:<url>` (TTL 1800s)
-- Direct fetch → fallback `api.allorigins.win/raw?url=...` → 502 if both fail
+- Direct fetch ke upstream → 502 jika upstream unreachable (tanpa fallback pihak ketiga)
 - CORS `*` + `Cache-Control: public, max-age=60, stale-while-revalidate=300`
 ```
