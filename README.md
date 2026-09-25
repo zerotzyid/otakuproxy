@@ -1,5 +1,7 @@
 # otakudesu-proxy (Cloudflare Workers)
 
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/zerotzyid/otakuproxy)
+
 Free no-card proxy: Vercel → Workers → `otakudesu.blog`.
 
 ## Setup
